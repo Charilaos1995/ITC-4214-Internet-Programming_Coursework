@@ -1,0 +1,66 @@
+/* Global Styles */
+body {
+    font-family: 'Rock Salt', cursive;
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar-default {
+    background-color: #222;
+    border-color: transparent;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > li.active > a,
+.navbar-default .navbar-nav > li.active > a:hover,
+.navbar-default .navbar-nav > li > a:hover {
+    background-color: #333;
+}
+
+/* Contact Form Styles */
+.container {
+    margin-top: 50px;
+}
+
+h2 {
+    color: #ff9900;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    color: #fff; /* White */
+}
+
+.form-control {
+    background-color: #333; /* Dark grey */
+    color: #fff; /* White */
+    border: 1px solid #ff9900; /* Rock&Roll Classics orange */
+}
+
+.form-control:focus {
+    border-color: #ff9900; /* Rock&Roll Classics orange */
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: #ff9900; /* Rock&Roll Classics orange */
+    border-color: #ff9900; /* Rock&Roll Classics orange */
+    color: #000; /* Black */
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #cc7a00; /* Darker shade of Rock&Roll Classics orange */
+    border-color: #cc7a00; /* Darker shade of Rock&Roll Classics orange */
+}
