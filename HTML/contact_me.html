@@ -10,7 +10,7 @@
 <body>
 
     <!-- Navigation bar -->
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
@@ -58,20 +58,6 @@
     <!-- Bootstrap and jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-    <!-- Script to handle form submission and display message -->
-    <script>
-        $(document).ready(function() {
-            $('#contact-form').submit(function(event) {
-                event.preventDefault(); // Prevent default form submission
-
-                // Get form data
-                var formData = $(this).serialize();
-
-                // Display submitted data as a pop-up
-                alert('Form submitted!\n' + formData);
-            });
-        });
-    </script>
+    <script src="../JavaScript/scripts.js"></script>
 </body>
 </html>
