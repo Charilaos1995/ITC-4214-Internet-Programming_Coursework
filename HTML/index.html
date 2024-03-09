@@ -4,14 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock&Roll Classics List</title>
+    <title>'Rock&Roll Classics' List</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.2/css/all.min.css"
-        integrity="sha512-4DEwpHgkXdS/yuPmqSgpfQuq9VYmzYx7qvBrbQLZPn0GvHJAT91Vg0VqInlPzk7rMRuIwS7sj9D8hjLHwoTlKQ=="
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">       
 </head>
 
 <body>
@@ -26,7 +24,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Rock&Roll Classics</a>
+                <a class="navbar-brand" href="index.html">'Rock&Roll Classics'</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav">
@@ -40,7 +38,7 @@
 
 
     <div class="container mt-5">
-        <h1>Rock&Roll Classics List</h1>
+        <h1>Your 'Rock&Roll Classics' List</h1>
 
         <!-- Form to add a new song -->
         <form id="addSongForm">
@@ -59,8 +57,8 @@
         <table class="table mt-3">
             <thead>
                 <tr>
-                    <th scope="col">Song Title</th>
-                    <th scope="col">Artist</th>
+                    <th scope="col" data-sort="title" class="sortable">Song Title<i class="fas fa-sort"></i></th>
+                    <th scope="col" data-sort="artist" class="sortable">Artist<i class="fas fa-sort"></i></th>
                     <th scope="col">Actions</th>
                 </tr>
             </thead>

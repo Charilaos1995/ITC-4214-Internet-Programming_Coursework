@@ -15,19 +15,23 @@ body {
     color: #fff;
 }
 
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav>li>a {
     color: #fff;
 }
 
-.navbar-default .navbar-nav > li.active > a,
-.navbar-default .navbar-nav > li.active > a:hover,
-.navbar-default .navbar-nav > li > a:hover {
+.navbar-default .navbar-nav>li.active>a,
+.navbar-default .navbar-nav>li.active>a:hover,
+.navbar-default .navbar-nav>li>a:hover {
     background-color: #333;
 }
 
 /* Contact Form Styles */
 .container {
     margin-top: 50px;
+}
+
+h1 {
+    color: #ff9900;
 }
 
 h2 {
@@ -39,29 +43,54 @@ h2 {
 }
 
 label {
-    color: #fff; /* White */
+    color: #fff;
+    /* White */
 }
 
 .form-control {
-    background-color: #333; /* Dark grey */
-    color: #fff; /* White */
-    border: 1px solid #ff9900; /* Rock&Roll Classics orange */
+    background-color: #333;
+    /* Dark grey */
+    color: #fff;
+    /* White */
+    border: 1px solid #ff9900;
+    /* Rock&Roll Classics orange */
 }
 
 .form-control:focus {
-    border-color: #ff9900; /* Rock&Roll Classics orange */
+    border-color: #ff9900;
+    /* Rock&Roll Classics orange */
     box-shadow: none;
 }
 
 .btn-primary {
-    background-color: #ff9900; /* Rock&Roll Classics orange */
-    border-color: #ff9900; /* Rock&Roll Classics orange */
-    color: #000; /* Black */
+    background-color: #ff9900;
+    /* Rock&Roll Classics orange */
+    border-color: #ff9900;
+    /* Rock&Roll Classics orange */
+    color: #000;
+    /* Black */
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-    background-color: #cc7a00; /* Darker shade of Rock&Roll Classics orange */
-    border-color: #cc7a00; /* Darker shade of Rock&Roll Classics orange */
+    background-color: #cc7a00;
+    /* Darker shade of Rock&Roll Classics orange */
+    border-color: #cc7a00;
+    /* Darker shade of Rock&Roll Classics orange */
 }
+
+/* Custom CSS to limit modal body width and enable text wrapping */
+.modal-body {
+    max-width: 100%; 
+    word-wrap: break-word; /* Enable text wrapping */
+}
+
+/* Custom CSS to change modal background color */
+.modal-content {
+    background-color: #333; 
+    color: #fff; 
+}
+
+
+
