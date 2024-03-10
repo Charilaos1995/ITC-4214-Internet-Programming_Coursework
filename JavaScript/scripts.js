@@ -53,12 +53,17 @@ $(document).ready(function() {
         });
     });
 
-
-
-    // Function to compare values for sorting
+    /**
+     * 
+     * @param {string} index - The index of the column to sort by ('title' or 'artist')
+     * @param {string} sortOrder - The sorting order ('asc' or 'desc')
+     * @returns {function} - A comparison function for sorting rows based on the specified column and sorting order.
+     */
     function compare(index, sortOrder) {
         return function(a, b) {
             var valA, valB;
+
+            // Get the text values of the cells in the specified column and convert them to uppercase
             if (index === 'title') {
                 valA = $(a).find('td:eq(0)').text().toUpperCase();
                 valB = $(b).find('td:eq(0)').text().toUpperCase();
@@ -68,8 +73,10 @@ $(document).ready(function() {
                 valB = $(b).find('td:eq(1)').text().toUpperCase();
             }
             
+            // If the values are equal, return 0
             if (valA === valB) return 0;
-        
+            
+            // Return -1 if valA should come before valB, 1 otherwise, based on the sorting order
             if (sortOrder === 'asc') {
                 return valA < valB ? -1 : 1;
             } 
@@ -80,21 +87,20 @@ $(document).ready(function() {
     }
 
     // Event listener for form submission
-    $(document).ready(function() {
-        $('#contact-form').submit(function(event) {
-            event.preventDefault(); // Prevent default form submission
-    
-            // Get form data
-            var formData = $(this).serialize();
-    
-            // Display submitted data in a modal
-            $('#exampleModal .modal-body').text(formData);
-            $('#exampleModal').modal('show');
-        });
-    });    
+    $('#contact-form').submit(function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Get form data
+        var formData = $(this).serialize();
+
+        // Display submitted data in a modal
+        $('#exampleModal .modal-body').text(formData);
+        $('#exampleModal').modal('show');
+    });
+
+    // Scroll to top functionality
+    $('.footer-link').click(function() {
+        $('html, body').animate({ scrollTop: 0 }, 'slow');
+        return false;
+    });
 });
-
-
-
-
-

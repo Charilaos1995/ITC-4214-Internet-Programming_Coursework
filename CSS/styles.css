@@ -6,6 +6,7 @@ body {
     color: #fff;
 }
 
+/* Navbar Styles */
 .navbar-default {
     background-color: #222;
     border-color: transparent;
@@ -23,6 +24,29 @@ body {
 .navbar-default .navbar-nav>li.active>a:hover,
 .navbar-default .navbar-nav>li>a:hover {
     background-color: #333;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    max-height: calc(100% - 10px);
+    margin-right: 10px;;
+}
+
+.navbar {
+    overflow: hidden;
+}
+
+.logo-text {
+    font-size: 18px;
 }
 
 /* Contact Form Styles */
@@ -43,17 +67,13 @@ h2 {
 }
 
 label {
-    color: #fff;
-    /* White */
+    color: #fff; /* White */
 }
 
 .form-control {
-    background-color: #333;
-    /* Dark grey */
-    color: #fff;
-    /* White */
-    border: 1px solid #ff9900;
-    /* Rock&Roll Classics orange */
+    background-color: #333; /* Dark grey */
+    color: #fff; /* White */
+    border: 1px solid #ff9900; /* Rock&Roll Classics orange */
 }
 
 .form-control:focus {
@@ -63,21 +83,16 @@ label {
 }
 
 .btn-primary {
-    background-color: #ff9900;
-    /* Rock&Roll Classics orange */
-    border-color: #ff9900;
-    /* Rock&Roll Classics orange */
-    color: #000;
-    /* Black */
+    background-color: #ff9900; /* Rock&Roll Classics orange */
+    border-color: #ff9900; /* Rock&Roll Classics orange */
+    color: #000; /* Black */
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-    background-color: #cc7a00;
-    /* Darker shade of Rock&Roll Classics orange */
-    border-color: #cc7a00;
-    /* Darker shade of Rock&Roll Classics orange */
+    background-color: #cc7a00; /* Darker shade of Rock&Roll Classics orange */
+    border-color: #cc7a00 /* Darker shade of Rock&Roll Classics orange */
 }
 
 /* Custom CSS to limit modal body width and enable text wrapping */
@@ -91,6 +106,41 @@ label {
     background-color: #333; 
     color: #fff; 
 }
+
+/* Footer Styles */
+.footer {
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;   
+}
+
+.footer-link {
+    margin-bottom: 0;
+    color: #ff9900;
+    
+}
+
+.footer-link:hover {
+    color: #cc7a00;
+}
+
+.footer-link:active {
+    color: #ff9900;
+}
+
+.social-media-icons {
+    text-align: center; /* Center align the social media icons */
+}
+
+.social-media-icons i {
+    margin: 0 10px; /* Adjust the spacing between social media icons */
+    font-size: 24px; /* Adjust the size of the icons */
+    color: #c36e06; /* Color of the icons */
+}
+
 
 
 
