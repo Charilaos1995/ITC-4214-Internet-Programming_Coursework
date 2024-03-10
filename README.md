@@ -27,7 +27,6 @@ Users can add new songs, delete existing ones, and sort their list based on song
 7. Use the Contact page to send a message to the creator of the website.
 
 ## Credits
-This project was created by Charismatic Charis
+This project was created by Charismatic Charis (aka. Charilaos Giannopoulos)
 
-## License 
-This project is licensed under the [MIT License](LICENSE).
+
